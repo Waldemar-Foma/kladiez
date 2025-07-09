@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KLADIEZ.RU - Межрегиональный строительный портал для поиска мастеров и заказов">
+  <title>KLADIEZ.RU - Межрегиональный строительный портал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="img/logo_white.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <a href="/" class="logo">
+          <img src="img/logo.png" alt="KLADIEZ.RU" class="logo-img" width="70" height="70" loading="lazy">
+          <div class="logo-text">
+            <h1 class="logo-title">KLADIEZ.RU</h1>
+            <p class="logo-subtitle">Межрегиональный строительный портал «Честный Бизнес»</p>
+          </div>
+        </a>
+        <nav class="quick-links" aria-label="Быстрые ссылки">
+          <a href="#how-to-find" class="quick-link"><i class="fas fa-search"></i> Как найти мастера?</a>
+          <a href="#how-to-get" class="quick-link"><i class="fas fa-briefcase"></i> Как получить заказ?</a>
+          <a href="#how-to-post" class="quick-link"><i class="fas fa-bullhorn"></i> Как дать объявление?</a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="navbar" aria-label="Основная навигация">
+      <div class="container">
+        <div class="location" id="location-selector">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="location-text">Калининград</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="nav-links">
+          <a href="/" class="nav-link active"><i class="fas fa-home"></i> Главная</a>
+          <a href="/info" class="nav-link"><i class="fas fa-info-circle"></i> Информация</a>
+          <a href="/training" class="nav-link"><i class="fas fa-graduation-cap"></i> Профобучение</a>
+          <a href="/ads" class="nav-link"><i class="fas fa-newspaper"></i> Объявления</a>
+          <a href="/masters" class="nav-link"><i class="fas fa-hammer"></i> Мастера</a>
+          <a href="/orders" class="nav-link"><i class="fas fa-tasks"></i> Заказы</a>
+        </div>
+        <div class="user-actions">
+          <a href="#" class="user-link" id="login-btn" aria-label="Вход в аккаунт">
+            <i class="fas fa-user"></i> Вход
+          </a>
+          <a href="#" class="btn btn-primary" id="register-btn" aria-label="Регистрация">Регистрация</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="promo-section">
+      <div class="container">
+        <div class="promo-content">
+          <h2 class="promo-title">Партнёрская скидка по карте Kladiez.ru <span class="highlight">15%</span></h2>
+          <p class="promo-text">
+            Уважаемые Пользователи, Вам предоставлена возможность получения корпоративной скидки на все товары и
+            услуги у Партнеров сайта. Зарегистрируйтесь и получите виртуальную карту прямо сейчас!
+          </p>
+          <div class="promo-buttons">
+            <a href="#discount-program" class="btn btn-outline">Подробнее о программе</a>
+            <a href="#" class="btn btn-primary" id="get-card-btn">Получить карту</a>
+          </div>
+        </div>
+        
+        <div class="promo-card" id="bonus-card" aria-label="Бонусная карта" tabindex="0">
+          <div class="card-side card-front">
+            <div class="card-logo">
+              <img src="img/logo.png" alt="KLADIEZ.RU" width="60" height="60" loading="lazy">
+            </div>
+            <div class="card-number">
+              <span>KLADIEZ.RU</span>
+            </div>
+            <div class="card-holder">
+              <span>Партнерская программа</span>
+            </div>
+            <div class="card-discount">
+              <span>15%</span>
+            </div>
+          </div>
+          <div class="card-side card-back">
+            <div class="card-qr">
+              <img src="img/qr-code.png" alt="QR Code" width="120" height="120" loading="lazy">
+            </div>
+            <div class="card-terms">
+              <span>Скидка действует при предъявлении карты.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="masters-count">5000+</div>
+            <div class="stat-label">Мастеров</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="orders-count">12000+</div>
+            <div class="stat-label">Заказов</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="partners-count">150+</div>
+            <div class="stat-label">Партнеров</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="cities-count">25+</div>
+            <div class="stat-label">Городов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-section" id="partners">
+      <div class="container">
+        <h2 class="section-title">Наши партнеры</h2>
+        <div class="partners-marquee">
+          <div class="partners-track" id="partnersTrack" aria-live="polite">
+            <!-- Партнеры будут добавлены через JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-users"></i></div>
+            <h3>Более 5000 мастеров</h3>
+            <p>Найдите проверенных специалистов для любого вида строительных и ремонтных работ</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+            <h3>Честные сделки</h3>
+            <p>Система рейтингов, отзывов и безопасных платежей для вашей уверенности</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-percentage"></i></div>
+            <h3>Скидки до 15%</h3>
+            <p>Специальные предложения от наших партнеров на материалы и инструменты</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Гарантия качества</h3>
+            <p>Все мастера проходят проверку и подтверждение квалификации</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-to-find">
+      <div class="container">
+        <h2 class="section-title">Как найти мастера</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Выберите категорию</h3>
+            <p>Укажите тип работ, которые вам нужно выполнить</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Опишите задачу</h3>
+            <p>Добавьте детали и прикрепите фото если нужно</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Получите предложения</h3>
+            <p>Мастера пришлют вам свои цены и сроки</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Выберите лучшего</h3>
+            <p>Сравните отзывы, рейтинги и цены</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="img/logo_white.png" alt="KLADIEZ.RU" class="footer-logo-img" width="65" height="65" loading="lazy">
+            <div>
+              <h3 class="footer-logo-title">KLADIEZ.RU</h3>
+              <p class="footer-logo-subtitle">Межрегиональный строительный портал «Честный Бизнес»</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+            <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">О портале</h4>
+          <a href="/about" class="footer-link">О компании</a>
+          <a href="/news" class="footer-link">Новости</a>
+          <a href="/contacts" class="footer-link">Контакты</a>
+          <a href="/advertising" class="footer-link">Реклама на сайте</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Помощь</h4>
+          <a href="/faq" class="footer-link">Частые вопросы</a>
+          <a href="/support" class="footer-link">Тех поддержка</a>
+          <a href="/feedback" class="footer-link">Обратная связь</a>
+          <a href="/partners" class="footer-link">Партнерская программа</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Документы</h4>
+          <a href="/terms" class="footer-link">Пользовательское соглашение</a>
+          <a href="/privacy" class="footer-link">Политика конфиденциальности</a>
+          <a href="/offer" class="footer-link">Публичная оферта</a>
+          <a href="/personal-data" class="footer-link">Обработка персональных данных</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 KLADIEZ.RU - Межрегиональный строительный портал. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="auth-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+      <h2 class="modal-title">Вход в аккаунт</h2>
+      <form class="auth-form">
+        <div class="form-group">
+          <input type="email" placeholder="Email" required>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Пароль" required>
+          <i class="fas fa-lock"></i>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Войти</button>
+        <div class="form-footer">
+          <a href="#" id="forgot-password">Забыли пароль?</a>
+          <a href="#" id="switch-to-register">Регистрация</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="register-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" id="register-modal-close" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+      <h2 class="modal-title">Регистрация</h2>
+      <div class="register-message">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>Извините, сервис регистрации временно недоступен. Пожалуйста, попробуйте позже или свяжитесь с поддержкой.</p>
+        <button class="btn btn-primary" id="register-ok-btn">Понятно</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="location-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" id="location-modal-close" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+      <h2 class="modal-title">Выберите ваш город</h2>
+      <div class="location-search">
+        <input type="text" placeholder="Начните вводить город..." id="city-search">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cities-list" id="cities-list">
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/script.js" defer></script>
+</body>
+</html>

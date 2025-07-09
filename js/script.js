@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
       { name: "Дент Сервис", logo: "dentservis.png" },
       { name: "Дельта Те", logo: "delta-te.png" },
       { name: "Специалист", logo: "specialist.png" },
+      { name: "Вариус", logo: "varius.png" },
     ];
 
     partnersTrack.innerHTML = '';

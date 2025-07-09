@@ -169,12 +169,11 @@ document.addEventListener('DOMContentLoaded', function () {
       { name: "Дент Сервис", logo: "dentservis.png" },
       { name: "Дельта Те", logo: "delta-te.png" },
       { name: "Специалист", logo: "specialist.png" },
-      { name: "Вариус", logo: "varius.png" },
     ];
 
     partnersTrack.innerHTML = '';
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
       partners.forEach(partner => {
         const partnerElement = document.createElement('div');
         partnerElement.className = 'partner-logo';

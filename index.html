@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KLADIEZ.RU - Межрегиональный строительный портал для поиска мастеров и заказов">
+  <meta name="keywords" content="строительный портал, мастера, заказы, ремонт, строительство">
+  <title>KLADIEZ.RU - Межрегиональный строительный портал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="img/logo_white.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <div class="logo">
+        <img src="img/logo.png" alt="KLADIEZ.RU" class="logo-img" width="40" height="40" loading="lazy">
+        <div class="logo-text">
+          <h1 class="logo-title">KLADIEZ.RU</h1>
+        </div>
+      </div>
+      <button class="mobile-close" id="mobile-close" aria-label="Закрыть меню">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" aria-label="Мобильная навигация">
+      <a href="#" class="mobile-nav-link active"><i class="fas fa-home" aria-hidden="true"></i> Главная</a>
+      <a href="other/under-construction.html" class="mobile-nav-link"><i class="fas fa-info-circle" aria-hidden="true"></i> Информация</a>
+      <a href="other/under-construction.html" class="mobile-nav-link"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Профобучение</a>
+      <a href="other/under-construction.html" class="mobile-nav-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Объявления</a>
+      <a href="other/under-construction.html" class="mobile-nav-link"><i class="fas fa-hammer" aria-hidden="true"></i> Мастера</a>
+      <a href="other/under-construction.html" class="mobile-nav-link"><i class="fas fa-tasks" aria-hidden="true"></i> Заказы</a>
+    </nav>
+
+    <div class="mobile-quick-links" aria-label="Быстрые ссылки">
+      <a href="#how-to-find" class="mobile-quick-link"><i class="fas fa-search" aria-hidden="true"></i> Как найти мастера?</a>
+      <a href="#work" class="mobile-quick-link"><i class="fas fa-briefcase" aria-hidden="true"></i> Как получить заказ?</a>
+      <a href="#work" class="mobile-quick-link"><i class="fas fa-bullhorn" aria-hidden="true"></i> Как дать объявление?</a>
+    </div>
+
+    <div class="mobile-user-actions">
+      <a href="#" class="btn btn-outline" id="mobile-login-btn">Вход</a>
+      <a href="#" class="btn btn-primary" id="mobile-register-btn">Регистрация</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <a href="#" class="logo" aria-label="Главная страница">
+          <img src="img/logo.png" alt="KLADIEZ.RU" class="logo-img" width="70" height="70" loading="lazy">
+          <div class="logo-text">
+            <h1 class="logo-title" style="font-weight: 800;">KLADIEZ.RU</h1>
+            <p class="logo-subtitle">Межрегиональный строительный портал «Честный Бизнес»</p>
+          </div>
+        </a>
+
+        <nav class="quick-links" aria-label="Быстрые ссылки">
+          <a href="#how-to-find" class="quick-link"><i class="fas fa-search" aria-hidden="true"></i> Как найти мастера?</a>
+          <a href="#work" class="quick-link"><i class="fas fa-briefcase" aria-hidden="true"></i> Как получить заказ?</a>
+          <a href="#work" class="quick-link"><i class="fas fa-bullhorn" aria-hidden="true"></i> Как дать объявление?</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="navbar" aria-label="Основная навигация">
+      <div class="container">
+        <div class="location" id="location-selector" role="button" aria-expanded="false" aria-controls="location-modal">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <span class="location-text">Калининград</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link active"><i class="fas fa-home" aria-hidden="true"></i> Главная</a>
+          <a href="other/under-construction.html" class="nav-link"><i class="fas fa-info-circle" aria-hidden="true"></i> Информация</a>
+          <a href="other/under-construction.html" class="nav-link"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Профобучение</a>
+          <a href="other/under-construction.html" class="nav-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Объявления</a>
+          <a href="other/under-construction.html" class="nav-link"><i class="fas fa-hammer" aria-hidden="true"></i> Мастера</a>
+          <a href="other/under-construction.html" class="nav-link"><i class="fas fa-tasks" aria-hidden="true"></i> Заказы</a>
+        </div>
+        <div class="user-actions">
+          <a href="#" class="user-link" id="login-btn"><i class="fas fa-user" aria-hidden="true"></i> Вход</a>
+          <a href="#" class="btn btn-primary" id="register-btn">Регистрация</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="promo-section">
+      <div class="container">
+        <div class="promo-content">
+          <h2 class="promo-title">Партнёрская скидка по карте Kladiez.ru <span class="highlight">15%</span></h2>
+          <p class="promo-text">
+            Уважаемые Пользователи, Вам предоставлена возможность получения корпоративной скидки на все товары и
+            услуги у Партнеров сайта. Зарегистрируйтесь и получите виртуальную карту прямо сейчас!
+          </p>
+          <div class="promo-buttons">
+            <a href="https://www.kladiez.ru/karty.php" class="btn btn-outline">Подробнее о программе</a>
+            <a href="https://www.kladiez.ru/karty.php" class="btn btn-primary" id="get-card-btn">Получить карту</a>
+          </div>
+        </div>
+        
+        <div class="promo-card" id="bonus-card" aria-label="Бонусная карта" tabindex="0" role="button" aria-pressed="false">
+  <div class="card-side card-front" aria-hidden="false">
+    <div class="card-logo">
+      <img src="img/logo.png" alt="KLADIEZ.RU" width="60" height="60" loading="lazy">
+    </div>
+    <div class="card-number">
+      <span>KLADIEZ.RU</span>
+    </div>
+    <div class="card-holder">
+      <span>Партнёрская карта</span>
+    </div>
+    <div class="card-discount">
+      <span>15%</span>
+    </div>
+  </div>
+  <div class="card-side card-back" aria-hidden="true">
+    <div class="card-qr">
+      <img src="img/qr-code.png" alt="QR Code" width="120" height="120" loading="lazy">
+    </div>
+    <div class="card-terms">
+      <span>Скидка 15% у партнёров при предъявлении карты</span>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <section class="taxi-dev-section">
+      <div class="container">
+        <div class="taxi-dev-content">
+          <div class="taxi-dev-icon">
+            <i class="fas fa-taxi"></i>
+          </div>
+          <div class="taxi-dev-text">
+            <h2>Идет разработка нового сервиса "Народное Такси"</h2>
+            <p>Следите за обновлениями! Скоро безопасные и комфортные поездки по фиксированным тарифам.</p>
+            <a href="other/taxi.html" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>Узнать подробнее
+            </a>
+             <a href="other/roadmap.html" class="btn btn-outline">
+              <i class="fas fa-road"></i> План развития проекта
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="masters-count">5000+</div>
+            <div class="stat-label">Мастеров</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="orders-count">12000+</div>
+            <div class="stat-label">Заказов</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="partners-count">150+</div>
+            <div class="stat-label">Партнеров</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="cities-count">25+</div>
+            <div class="stat-label">Городов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-section" id="partners">
+      <div class="container">
+        <h2 class="section-title">Наши партнеры</h2>
+        <div class="partners-marquee" aria-live="polite">
+          <div class="partners-track" id="partnersTrack">
+            <!-- Партнеры будут добавлены через JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+            <h3>Более 5000 мастеров</h3>
+            <p>Найдите проверенных специалистов для любого вида строительных и ремонтных работ</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+            <h3>Честные сделки</h3>
+            <p>Система рейтингов, отзывов и безопасных платежей для вашей уверенности</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-percentage" aria-hidden="true"></i></div>
+            <h3>Скидки до 15%</h3>
+            <p>Специальные предложения от наших партнеров на материалы и инструменты</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+            <h3>Гарантия качества</h3>
+            <p>Все мастера проходят проверку и подтверждение квалификации</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-to-find">
+      <div class="container">
+        <h2 class="section-title">Как найти мастера</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Выберите категорию</h3>
+            <p>Укажите тип работ, которые вам нужно выполнить</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Опишите задачу</h3>
+            <p>Добавьте детали и прикрепите фото если нужно</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Получите предложения</h3>
+            <p>Мастера пришлют вам свои цены и сроки</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Выберите лучшего</h3>
+            <p>Сравните отзывы, рейтинги и цены</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Development Notice Section -->
+    <section class="dev-notice-section" id="work">
+      <div class="container">
+        <div class="dev-notice-content">
+          <h2 class="dev-notice-title">Внимание! Идет разработка новой версии</h2>
+          <p class="dev-notice-text">
+            Мы активно работаем над улучшением нашего портала. Некоторые функции могут быть временно недоступны.
+            Для доступа к полному функционалу вы можете перейти на старую версию сайта.
+          </p>
+          <div class="dev-notice-buttons">
+            <a href="https://www.kladiez.ru/index.php" target="_blank" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> Перейти на старую версию
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="survey-section">
+  <div class="survey-container">
+    <h2 class="survey-title">Оцените наш редизайн</h2>
+    <p class="survey-text">Все ли вам понятно и хотели бы вы видеть такой формат сайта? Ответьте на короткий опрос и помогите нам стать лучше!</p>
+    <a href="https://forms.gle/ENW6wvENBBdaKSiB7" target="_blank" class="btn survey-btn">
+      <i class="fas fa-poll"></i> Перейти к опросу
+    </a>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="img/logo_white.png" alt="KLADIEZ.RU" class="footer-logo-img" width="65" height="65" loading="lazy">
+            <div>
+              <h3 class="footer-logo-title">KLADIEZ.RU</h3>
+              <p class="footer-logo-subtitle">Межрегиональный строительный портал «Честный Бизнес»</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">О портале</h4>
+          <a href="https://www.kladiez.ru/pager.php?id=4" class="footer-link">О компании</a>
+          <a href="https://www.kladiez.ru/index.php" class="footer-link">Новости</a>
+          <a href="https://www.kladiez.ru/contacts2.php" class="footer-link">Контакты</a>
+          <a href="https://www.kladiez.ru/deal.php" class="footer-link">Реклама на сайте</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Помощь</h4>
+          <a href="other/under-construction.html" class="footer-link">Частые вопросы</a>
+          <a href="https://www.kladiez.ru/contacts2.php" class="footer-link">Тех поддержка</a>
+          <a href="https://www.kladiez.ru/karty.php" class="footer-link">Партнерская программа</a>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Документы</h4>
+          <a href="https://www.kladiez.ru/pager.php?id=17" class="footer-link">Пользовательское соглашение</a>
+          <a href="https://www.kladiez.ru/pager.php?id=10" class="footer-link">Политика конфиденциальности</a>
+          <a href="other/under-construction.html" class="footer-link">Публичная оферта</a>
+          <a href="https://www.kladiez.ru/pager.php?id=10" class="footer-link">Обработка персональных данных</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 KLADIEZ.RU - Межрегиональный строительный портал. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+ <div class="modal" id="auth-modal" aria-hidden="true" role="dialog" aria-labelledby="auth-modal-title">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <h2 class="modal-title" id="auth-modal-title">Вход в систему</h2>
+    <div class="register-message">
+      <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+      <p>Извините, сервис входа временно недоступен. Пожалуйста, попробуйте позже или свяжитесь с поддержкой.</p>
+      <button class="btn btn-primary" id="auth-ok-btn">Понятно</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Register Modal -->
+  <div class="modal" id="register-modal" aria-hidden="true" role="dialog" aria-labelledby="register-modal-title">
+    <div class="modal-content">
+      <button class="modal-close" id="register-modal-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
+      <h2 class="modal-title" id="register-modal-title">Регистрация</h2>
+      <div class="register-message">
+        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+        <p>Извините, сервис регистрации временно недоступен. Пожалуйста, попробуйте позже или свяжитесь с поддержкой.</p>
+        <button class="btn btn-primary" id="register-ok-btn">Понятно</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Modal -->
+  <div class="modal" id="location-modal" aria-hidden="true" role="dialog" aria-labelledby="location-modal-title">
+    <div class="modal-content">
+      <button class="modal-close" id="location-modal-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
+      <h2 class="modal-title" id="location-modal-title">Выберите ваш регион</h2>
+      <div class="location-search">
+        <input type="text" placeholder="Начните вводить регион..." id="city-search" aria-label="Поиск региона">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="cities-list" id="cities-list" role="listbox">
+        <!-- Города будут добавлены через JavaScript -->
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/script.js" defer></script>
+</body>
+</html>

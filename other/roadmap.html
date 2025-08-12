@@ -3,28 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>План развития - KLADIEZ.RU</title>
+  <title>План развития - Народное такси | KLADIEZ.RU</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/roadmap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/png" href="../img/logo_white.png">
-  <meta name="description" content="Дорожная карта развития проекта KLADIEZ.RU: подготовка к тестовому запуску, тестовый запуск, масштабирование, стабилизация и метрики успеха.">
+  <meta name="description" content="Дорожная карта развития сервиса Народное такси от KLADIEZ.RU: этапы разработки, тестирования и запуска сервиса.">
 </head>
 <body>
-  <header class="header" role="banner">
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <div class="logo">
+        <img src="../img/logo.png" alt="KLADIEZ.RU" class="logo-img" width="40" height="40" loading="lazy">
+        <div class="logo-text">
+          <h1 class="logo-title">KLADIEZ.RU</h1>
+        </div>
+      </div>
+      <button class="mobile-close" id="mobile-close" aria-label="Закрыть меню">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" aria-label="Мобильная навигация">
+      <a href="#" class="mobile-nav-link active"><i class="fas fa-home" aria-hidden="true"></i> Главная</a>
+      <a href="under-construction.html" class="mobile-nav-link"><i class="fas fa-info-circle" aria-hidden="true"></i> Информация</a>
+      <a href="under-construction.html" class="mobile-nav-link"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Профобучение</a>
+      <a href="under-construction.html" class="mobile-nav-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Объявления</a>
+      <a href="under-construction.html" class="mobile-nav-link"><i class="fas fa-hammer" aria-hidden="true"></i> Мастера</a>
+      <a href="under-construction.html" class="mobile-nav-link"><i class="fas fa-tasks" aria-hidden="true"></i> Заказы</a>
+    </nav>
+
+    <div class="mobile-quick-links" aria-label="Быстрые ссылки">
+      <a href="../index.html#how-to-find" class="mobile-quick-link"><i class="fas fa-search" aria-hidden="true"></i> Как найти мастера?</a>
+      <a href="../index.html#work" class="mobile-quick-link"><i class="fas fa-briefcase" aria-hidden="true"></i> Как получить заказ?</a>
+      <a href="../index.html#work" class="mobile-quick-link"><i class="fas fa-bullhorn" aria-hidden="true"></i> Как дать объявление?</a>
+    </div>
+
+    <div class="mobile-user-actions">
+      <a href="#" class="btn btn-outline" id="mobile-login-btn">Вход</a>
+      <a href="#" class="btn btn-primary" id="mobile-register-btn">Регистрация</a>
+    </div>
+  </div>
+
+  <header class="header">
     <div class="container">
       <div class="header-top">
         <a href="../index.html" class="logo" aria-label="Главная страница">
           <img src="../img/logo.png" alt="KLADIEZ.RU" class="logo-img" width="70" height="70" loading="lazy">
           <div class="logo-text">
-            <h1 class="logo-title">KLADIEZ.RU</h1>
+            <h1 class="logo-title" style="font-weight: 800;">KLADIEZ.RU</h1>
             <p class="logo-subtitle">Межрегиональный строительный портал «Честный Бизнес»</p>
           </div>
         </a>
 
-        <nav class="top-nav" aria-label="Навигация по сайту">
-          <a href="../index.html" class="nav-link">Главная</a>
-          <a href="../other/roadmap.html" class="nav-link active" aria-current="page">План развития</a>
-          <a href="../other/under-construction.html" class="nav-link">Опрос</a>
+        <nav class="quick-links" aria-label="Быстрые ссылки">
+          <a href="../index.html#how-to-find" class="quick-link"><i class="fas fa-search" aria-hidden="true"></i> Как найти мастера?</a>
+          <a href="../index.html#work" class="quick-link"><i class="fas fa-briefcase" aria-hidden="true"></i> Как получить заказ?</a>
+          <a href="../index.html#work" class="quick-link"><i class="fas fa-bullhorn" aria-hidden="true"></i> Как дать объявление?</a>
         </nav>
 
         <button class="hamburger" id="hamburger" aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">
@@ -34,145 +71,164 @@
         </button>
       </div>
     </div>
+
+    <nav class="navbar" aria-label="Основная навигация">
+      <div class="container">
+        <div class="location" id="location-selector" role="button" aria-expanded="false" aria-controls="location-modal">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <span class="location-text">Калининград</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link active"><i class="fas fa-home" aria-hidden="true"></i> Главная</a>
+          <a href="under-construction.html" class="nav-link"><i class="fas fa-info-circle" aria-hidden="true"></i> Информация</a>
+          <a href="under-construction.html" class="nav-link"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Профобучение</a>
+          <a href="under-construction.html" class="nav-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Объявления</a>
+          <a href="under-construction.html" class="nav-link"><i class="fas fa-hammer" aria-hidden="true"></i> Мастера</a>
+          <a href="under-construction.html" class="nav-link"><i class="fas fa-tasks" aria-hidden="true"></i> Заказы</a>
+        </div>
+        <div class="user-actions">
+          <a href="#" class="user-link" id="login-btn"><i class="fas fa-user" aria-hidden="true"></i> Вход</a>
+          <a href="#" class="btn btn-primary" id="register-btn">Регистрация</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main class="main-content" role="main">
-    <section class="roadmap-container">
-  <div class="roadmap-header animate-on-scroll">
-    <h1 class="roadmap-title">План развития проекта</h1>
-    <p class="roadmap-subtitle">
-      На этой странице вы можете ознакомиться с нашими планами по развитию сервиса "Народное такси".
-      Мы постоянно работаем над улучшением сервиса и добавлением новых функций.
-    </p>
-  </div>
-
-  <div class="roadmap-timeline">
-    <div class="roadmap-item">
-      <div class="roadmap-item-content animate-on-scroll">
-        <div class="roadmap-date">до 1 сентября 2025 года</div>
-
-        <h3 class="roadmap-item-title">Запуск бета-версии</h3>
-        <p class="roadmap-item-text">Основные функции портала:</p>
-        <ul class="roadmap-item-list">
-          <li>Разработка Telegram-бота:
-            <ul>
-              <li>Функционал для создания заказов: пункт А → пункт Б, выбор времени поездки.</li>
-              <li>Чат между водителем и пассажиром для согласования деталей (оплата, точное место встречи).</li>
-              <li>Система рейтинга и отзывов для обеих сторон.</li>
-            </ul>
-          </li>
-          <li>Создание философии сервиса и попытка донести эту философию до пользователей (единство народа)</li>
-        </ul>
-        <p class="roadmap-item-text">Тестирование:</p>
-        <ul class="roadmap-item-list">
-          <li>Закрытый тест с водителями и пассажирами.</li>
-          <li>Проверка стабильности связи и удобства интерфейса.</li>
-          <li>Поиск уязвимостей в системе и устранение таковых.</li>
-        </ul>
-        <p class="roadmap-item-text">Привлечение первых участников:</p>
-        <ul class="roadmap-item-list">
-          <li>Размещение объявлений в локальных сообществах (Telegram, соцсети, доски объявлений).</li>
-          <li>Партнерство с АЗС/автосервисами для информирования водителей (гипотетически).</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="roadmap-item">
-      <div class="roadmap-item-content animate-on-scroll">
-        <div class="roadmap-date">1–30 сентября 2025 года</div>
-
-        <h3 class="roadmap-item-title">Тестовый запуск</h3>
-        <p class="roadmap-item-text">Ограниченная аудитория: до 100 водителей запускаем бесплатно, дальше просим плату за вход в систему.</p>
-        <ul class="roadmap-item-list">
-          <li>Старт проекта: г. Калининград.</li>
-          <li>Ежедневный сбор обратной связи через анкеты в боте.</li>
-          <li>Распространение информации о старте пилотного проекта (реклама).</li>
-        </ul>
-        <p class="roadmap-item-text">Доработки:</p>
-        <ul class="roadmap-item-list">
-          <li>Упрощение процесса подачи заявки.</li>
-          <li>Добавление фильтров (например, "перевозка животных", "грузовые перевозки").</li>
-        </ul>
-        <p class="roadmap-item-text">Мотивация участников:</p>
-        <ul class="roadmap-item-list">
-          <li>Бонусы (например, приоритет в выдаче заказов) для активных водителей, бонусная карта Kladiez.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="roadmap-item">
-      <div class="roadmap-item-content animate-on-scroll">
-        <div class="roadmap-date">октябрь — ноябрь 2025 года</div>
-
-        <h3 class="roadmap-item-title">Масштабирование</h3>
-        <p class="roadmap-item-text">Расширение географии:</p>
-        <ul class="roadmap-item-list">
-          <li>Окончательный выход в область.</li>
-        </ul>
-        <p class="roadmap-item-text">Продвижение:</p>
-        <ul class="roadmap-item-list">
-          <li>"Сарафанное радио" — программа поощрения за приглашение новых пользователей.</li>
-          <li>Попытка получить грант/поддержку у правительства области (почему бы и нет).</li>
-        </ul>
-        <p class="roadmap-item-text">Автоматизация:</p>
-        <ul class="roadmap-item-list">
-          <li>Умные уведомления для водителей (например, о спросе в их районе).</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="roadmap-item">
-      <div class="roadmap-item-content animate-on-scroll">
-        <div class="roadmap-date">декабрь 2025 года</div>
-
-        <h3 class="roadmap-item-title">Стабилизация и рост</h3>
-        <p class="roadmap-item-text">Анализ:</p>
-        <ul class="roadmap-item-list">
-          <li>ТОП-5 проблем пользователей и их решение (например, добавление шаблонов сообщений для переговоров).</li>
-        </ul>
-        <p class="roadmap-item-text">Геймификация:</p>
-        <ul class="roadmap-item-list">
-          <li>Звания для водителей ("Герой дня", "Эксперт дальних маршрутов").</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="roadmap-item">
-      <div class="roadmap-item-content animate-on-scroll">
-        <h3 class="roadmap-item-title">Преимущества от классического такси:</h3>
-        <ul class="roadmap-item-list">
-          <li>Без комиссий — оплата без посредников.</li>
-          <li>Гибкость — любые маршруты и условия (например, перевозка животных).</li>
-          <li>Сообщество — акцент на доверии и рейтингах.</li>
-        </ul>
-
-        <h3 class="roadmap-item-title">Метрики успеха:</h3>
-        <ul class="roadmap-item-list">
-          <li>Количество завершенных поездок.</li>
-          <li>% возвращающихся пользователей.</li>
-          <li>Средний рейтинг водителей/пассажиров.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <!-- Призыв к действию / Опрос -->
-      <section class="survey-section" aria-labelledby="survey-heading">
-        <div class="survey-container">
-          <h3 id="survey-heading" class="survey-title">Хотите помочь тестировать?</h3>
-          <p class="survey-text">Если вы из Калининграда и готовы принять участие в пилоте или хотите получить больше информации — оставьте заявку в опросе.</p>
-          <a href="https://forms.gle/ENW6wvENBBdaKSiB7" target="_blank" class="btn survey-btn">
-            <i class="fas fa-poll" aria-hidden="true"></i> Перейти к опросу
-          </a>
-          <p class="small muted">Мы будем отбирать участников для закрытого теста и заранее уведомим выбранных.</p>
+  <main class="main-content">
+    <!-- Intro -->
+    <section class="taxi-dev-section">
+      <div class="container taxi-dev-content">
+        <div class="taxi-dev-icon"><i class="fas fa-taxi"></i></div>
+        <div class="taxi-dev-text">
+          <h2>Народное такси</h2>
+          <p>Сервис для поиска попутчиков и частных перевозчиков без комиссий</p>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!-- Roadmap -->
+    <section class="roadmap-section">
+      <div class="container">
+        <div class="roadmap-header">
+          <h1 class="roadmap-title">План развития сервиса</h1>
+          <p class="roadmap-subtitle">
+            Этапы разработки и запуска сервиса «Народное такси». Мы создаём удобный и безопасный сервис для пассажиров и водителей.
+          </p>
+        </div>
+
+        <div class="roadmap-timeline">
+          <!-- Этап 1 -->
+          <div class="roadmap-item fade-in">
+            <span class="roadmap-date">до 1 сентября 2025</span>
+            <div class="roadmap-item-content">
+              <h3 class="roadmap-item-title"><i class="fas fa-wrench"></i> Подготовка к тестовому запуску</h3>
+              <p class="roadmap-item-text">Основные функции:</p>
+              <ul class="roadmap-item-list">
+                <li>Разработка Telegram-бота с базовым функционалом:
+                  <ul>
+                    <li>Создание заказов (пункт А → пункт Б)</li>
+                    <li>Выбор времени поездки</li>
+                    <li>Чат между водителем и пассажиром</li>
+                  </ul>
+                </li>
+                <li>Система рейтингов и отзывов</li>
+                <li>Создание концепции сервиса</li>
+              </ul>
+              <p class="roadmap-item-text">Тестирование:</p>
+              <ul class="roadmap-item-list">
+                <li>Закрытое тестирование</li>
+                <li>Проверка стабильности</li>
+                <li>Исправление уязвимостей</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Этап 2 -->
+          <div class="roadmap-item fade-in">
+            <span class="roadmap-date">1–30 сентября 2025</span>
+            <div class="roadmap-item-content">
+              <h3 class="roadmap-item-title"><i class="fas fa-rocket"></i> Тестовый запуск</h3>
+              <ul class="roadmap-item-list">
+                <li>До 100 водителей</li>
+                <li>Бесплатный доступ</li>
+                <li>Старт в Калининграде</li>
+                <li>Сбор обратной связи</li>
+              </ul>
+              <p class="roadmap-item-text">Доработки:</p>
+              <ul class="roadmap-item-list">
+                <li>Упрощение подачи заявки</li>
+                <li>Фильтры (животные, грузы и т.д.)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Этап 3 -->
+          <div class="roadmap-item fade-in">
+            <span class="roadmap-date">октябрь — ноябрь 2025</span>
+            <div class="roadmap-item-content">
+              <h3 class="roadmap-item-title"><i class="fas fa-chart-line"></i> Масштабирование</h3>
+              <p class="roadmap-item-text">География:</p>
+              <ul class="roadmap-item-list">
+                <li>Расширение на область</li>
+              </ul>
+              <p class="roadmap-item-text">Продвижение:</p>
+              <ul class="roadmap-item-list">
+                <li>Программа поощрения за приглашения</li>
+                <li>Поиск грантов</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Этап 4 -->
+          <div class="roadmap-item fade-in">
+            <span class="roadmap-date">декабрь 2025</span>
+            <div class="roadmap-item-content">
+              <h3 class="roadmap-item-title"><i class="fas fa-users"></i> Стабилизация и рост</h3>
+              <p class="roadmap-item-text">Анализ:</p>
+              <ul class="roadmap-item-list">
+                <li>Решение проблем пользователей</li>
+              </ul>
+              <p class="roadmap-item-text">Геймификация:</p>
+              <ul class="roadmap-item-list">
+                <li>Система званий</li>
+                <li>Бонусы активным</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Преимущества -->
+          <div class="roadmap-item fade-in">
+            <span class="roadmap-date">Наши преимущества</span>
+            <div class="roadmap-item-content">
+              <h3 class="roadmap-item-title"><i class="fas fa-star"></i> Преимущества перед классическим такси</h3>
+              <ul class="roadmap-item-list">
+                <li><strong>Без комиссий</strong> — оплата напрямую водителю</li>
+                <li><strong>Гибкость</strong> — любые маршруты</li>
+                <li><strong>Сообщество</strong> — рейтинги и отзывы</li>
+                <li><strong>Экономия</strong> — выгодные цены</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Survey -->
+    <section class="survey-section">
+      <div class="container survey-container">
+        <h3 class="survey-title">Примите участие в развитии</h3>
+        <p class="survey-text">Если вы из Калининграда и хотите тестировать сервис — оставьте заявку.</p>
+        <a href="https://forms.gle/ENW6wvENBBdaKSiB7" target="_blank" class="btn survey-btn">
+          <i class="fas fa-poll"></i> Заполнить анкету
+        </a>
+        <p class="survey-note">Свяжемся с отобранными участниками.</p>
+      </div>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-col">
@@ -183,7 +239,7 @@
               <p class="footer-logo-subtitle">Межрегиональный строительный портал «Честный Бизнес»</p>
             </div>
           </div>
-          <div class="social-links" aria-hidden="false">
+          <div class="social-links">
             <a href="#" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk" aria-hidden="true"></i></a>
             <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
           </div>
@@ -191,26 +247,25 @@
         
         <div class="footer-col">
           <h4 class="footer-title">О портале</h4>
-          <a href="#" class="footer-link">О компании</a>
-          <a href="#" class="footer-link">Новости</a>
-          <a href="#" class="footer-link">Контакты</a>
-          <a href="#" class="footer-link">Реклама на сайте</a>
+          <a href="https://www.kladiez.ru/pager.php?id=4" class="footer-link">О компании</a>
+          <a href="https://www.kladiez.ru/index.php" class="footer-link">Новости</a>
+          <a href="https://www.kladiez.ru/contacts2.php" class="footer-link">Контакты</a>
+          <a href="https://www.kladiez.ru/deal.php" class="footer-link">Реклама на сайте</a>
         </div>
         
         <div class="footer-col">
           <h4 class="footer-title">Помощь</h4>
-          <a href="#" class="footer-link">Частые вопросы</a>
-          <a href="#" class="footer-link">Тех поддержка</a>
-          <a href="#" class="footer-link">Обратная связь</a>
-          <a href="#" class="footer-link">Партнёрская программа</a>
+          <a href="under-construction.html" class="footer-link">Частые вопросы</a>
+          <a href="https://www.kladiez.ru/contacts2.php" class="footer-link">Тех поддержка</a>
+          <a href="https://www.kladiez.ru/karty.php" class="footer-link">Партнерская программа</a>
         </div>
         
         <div class="footer-col">
           <h4 class="footer-title">Документы</h4>
-          <a href="#" class="footer-link">Пользовательское соглашение</a>
-          <a href="#" class="footer-link">Политика конфиденциальности</a>
-          <a href="#" class="footer-link">Публичная оферта</a>
-          <a href="#" class="footer-link">Обработка персональных данных</a>
+          <a href="https://www.kladiez.ru/pager.php?id=17" class="footer-link">Пользовательское соглашение</a>
+          <a href="https://www.kladiez.ru/pager.php?id=10" class="footer-link">Политика конфиденциальности</a>
+          <a href="under-construction.html" class="footer-link">Публичная оферта</a>
+          <a href="https://www.kladiez.ru/pager.php?id=10" class="footer-link">Обработка персональных данных</a>
         </div>
       </div>
       
@@ -219,8 +274,58 @@
       </div>
     </div>
   </footer>
+ <div class="modal" id="auth-modal" aria-hidden="true" role="dialog" aria-labelledby="auth-modal-title">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <h2 class="modal-title" id="auth-modal-title">Вход в систему</h2>
+    <div class="register-message">
+      <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+      <p>Извините, сервис входа временно недоступен. Пожалуйста, попробуйте позже или свяжитесь с поддержкой.</p>
+      <button class="btn btn-primary" id="auth-ok-btn">Понятно</button>
+    </div>
+  </div>
+</div>
 
+  <!-- Register Modal -->
+  <div class="modal" id="register-modal" aria-hidden="true" role="dialog" aria-labelledby="register-modal-title">
+    <div class="modal-content">
+      <button class="modal-close" id="register-modal-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
+      <h2 class="modal-title" id="register-modal-title">Регистрация</h2>
+      <div class="register-message">
+        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+        <p>Извините, сервис регистрации временно недоступен. Пожалуйста, попробуйте позже или свяжитесь с поддержкой.</p>
+        <button class="btn btn-primary" id="register-ok-btn">Понятно</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Modal -->
+  <div class="modal" id="location-modal" aria-hidden="true" role="dialog" aria-labelledby="location-modal-title">
+    <div class="modal-content">
+      <button class="modal-close" id="location-modal-close" aria-label="Закрыть"><i class="fas fa-times" aria-hidden="true"></i></button>
+      <h2 class="modal-title" id="location-modal-title">Выберите ваш регион</h2>
+      <div class="location-search">
+        <input type="text" placeholder="Начните вводить регион..." id="city-search" aria-label="Поиск региона">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="cities-list" id="cities-list" role="listbox">
+        <!-- Города будут добавлены через JavaScript -->
+      </div>
+    </div>
+  </div>
   <script src="../js/script.js" defer></script>
+  <script>
+    // Плавная анимация появления
+    const items = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    items.forEach(item => observer.observe(item));
+  </script>
 </body>
 </html>
-

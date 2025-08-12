@@ -96,6 +96,21 @@ h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.5rem; }
 
+/* Дополнение к styles.css */
+ul, ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Для вложенных списков */
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 p {
   margin-bottom: 1rem;
   color: var(--secondary);
@@ -1219,153 +1234,47 @@ a {
   text-align: center;
 }
 
-/* Roadmap Page Styles */
-.roadmap-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
+/* Survey Section */
+.survey-section {
+  padding: 60px 0;
+  background-color: var(--light);
 }
 
-.roadmap-header {
+.survey-container {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 60px;
+  padding: 0 20px;
 }
 
-.roadmap-title {
-  font-size: 36px;
+.survey-title {
+  font-size: 24px;
+  margin-bottom: 15px;
   color: var(--dark);
+}
+
+.survey-text {
+  font-size: 16px;
+  color: var(--secondary);
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.roadmap-subtitle {
-  font-size: 18px;
-  color: var(--gray);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.roadmap-timeline {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.roadmap-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  background-color: var(--primary);
-}
-
-.roadmap-item {
-  position: relative;
-  margin-bottom: 60px;
-  width: 100%;
-  min-height: 100px;
-}
-
-.roadmap-item:last-child {
-  margin-bottom: 0;
-}
-
-.roadmap-item-content {
-  position: relative;
-  width: calc(50% - 60px);
-  padding: 30px;
-  background-color: white;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow);
-}
-
-.roadmap-item:nth-child(odd) .roadmap-item-content {
-  left: 0;
-  margin-right: 60px;
-}
-
-.roadmap-item:nth-child(even) .roadmap-item-content {
-  left: 50%;
-  margin-left: 60px;
-}
-
-.roadmap-item-content::before {
-  content: '';
-  position: absolute;
-  top: 30px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.roadmap-item:nth-child(odd) .roadmap-item-content::before {
-  right: -15px;
-  border-width: 15px 0 15px 15px;
-  border-color: transparent transparent transparent white;
-}
-
-.roadmap-item:nth-child(even) .roadmap-item-content::before {
-  left: -15px;
-  border-width: 15px 15px 15px 0;
-  border-color: transparent white transparent transparent;
-}
-
-.roadmap-date {
-  position: absolute;
-  top: 30px;
-  width: 120px;
-  padding: 8px 12px;
+.survey-btn {
   background-color: var(--primary);
   color: var(--dark);
   font-weight: 600;
-  text-align: center;
-  border-radius: var(--border-radius-sm);
-  box-shadow: var(--shadow-sm);
-}
-
-.roadmap-item:nth-child(odd) .roadmap-date {
-  right: -180px;
-}
-
-.roadmap-item:nth-child(even) .roadmap-date {
-  left: -180px;
-}
-
-.roadmap-item-title {
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: var(--dark);
-}
-
-.roadmap-item-text {
-  color: var(--gray);
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 15px;
 }
 
-.roadmap-item-list {
-  margin-left: 20px;
+.survey-note {
+  font-size: 14px;
   color: var(--gray);
-  padding-left: 0;
-}
-
-.roadmap-item-list li {
-  margin-bottom: 8px;
-  position: relative;
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-.roadmap-item-list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--primary);
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1;
 }
 
 /* Project Section */
@@ -1459,6 +1368,251 @@ a {
 .taxi-dev-text p {
   color: var(--secondary);
   margin-bottom: 15px;
+}
+
+/* Taxi Section Styles */
+.taxi-section {
+  padding: 40px 0;
+  background-color: var(--white);
+}
+
+.taxi-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.taxi-title {
+  font-size: 32px;
+  color: var(--dark);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.taxi-subtitle {
+  font-size: 20px;
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.taxi-alert {
+  background-color: #fff3cd;
+  padding: 15px;
+  border-left: 4px solid var(--primary);
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.taxi-alert i {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.taxi-description {
+  margin: 40px 0;
+}
+
+.taxi-description h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.taxi-description p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.taxi-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.benefit-card {
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.benefit-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.benefit-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefit-card li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.benefit-card i.fa-check {
+  color: var(--primary);
+  margin-top: 3px;
+}
+
+.taxi-steps {
+  margin: 40px 0;
+}
+
+.taxi-steps h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.step {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--dark);
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.taxi-advantages {
+  margin: 40px 0;
+}
+
+.taxi-advantages h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.advantage {
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.advantage h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.advantage ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.advantage li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.advantage i.fa-check-circle {
+  color: var(--primary);
+  margin-top: 3px;
+}
+
+.taxi-faq {
+  margin: 40px 0;
+}
+
+.taxi-faq h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.faq-question {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-question i {
+  color: var(--primary);
+}
+
+.faq-answer {
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.faq-answer i {
+  color: var(--primary);
+  margin-top: 3px;
+}
+
+.taxi-cta {
+  background-color: var(--primary-light);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.taxi-cta h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.cta-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* Dev Notice Section */
@@ -1583,6 +1737,49 @@ a {
 }
 
 /* Responsive Styles */
+@media (max-width: 768px) {
+  .taxi-benefits,
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .taxi-title {
+    font-size: 28px;
+  }
+  
+  .taxi-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .taxi-title {
+    font-size: 24px;
+  }
+  
+  .taxi-subtitle {
+    font-size: 16px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+
+/* Responsive Styles */
 @media (max-width: 1200px) {
   .promo-section .container {
     flex-direction: column;
@@ -1658,39 +1855,6 @@ a {
   .construction-features {
     justify-content: center;
   }
-  
-  .roadmap-item-content {
-    width: calc(100% - 80px);
-    left: 80px !important;
-  }
-  
-.roadmap-timeline::before {
-    left: 40px;
-  }
-
-  .roadmap-item-content {
-    width: calc(100% - 80px);
-    left: 80px !important;
-    margin: 0 !important;
-  }
-
-  .roadmap-item:nth-child(odd) .roadmap-item-content::before,
-  .roadmap-item:nth-child(even) .roadmap-item-content::before {
-    left: -15px;
-    border-width: 15px 15px 15px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  .roadmap-date {
-    width: 100px;
-    left: -140px !important;
-    right: auto !important;
-    top: 20px;
-  }
-
-  .roadmap-dot {
-    left: 40px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1738,30 +1902,6 @@ a {
     grid-template-columns: 1fr;
   }
   
-  .roadmap-container {
-    padding: 40px 20px;
-  }
-  
-  .roadmap-item-content {
-    padding: 20px;
-  }
-  
-  .roadmap-date {
-    font-size: 14px;
-    padding: 6px 10px;
-    left: -120px !important;
-  }
-  
-  .roadmap-item-title {
-    font-size: 20px;
-  }
-  
-  .roadmap-item-text,
-  .roadmap-item-list {
-    font-size: 15px;
-  }
-}
-  
   .taxi-dev-content {
     flex-direction: column;
     text-align: center;
@@ -1770,6 +1910,7 @@ a {
   .taxi-dev-text {
     min-width: auto;
   }
+}
 
 @media (max-width: 576px) {
   .promo-section {
@@ -1860,34 +2001,5 @@ a {
   
   .card-holder {
     font-size: 12px;
-  }
-   .roadmap-header {
-    margin-bottom: 40px;
-  }
-  
-  .roadmap-title {
-    font-size: 28px;
-  }
-  
-  .roadmap-subtitle {
-    font-size: 16px;
-  }
-  
-  .roadmap-item-content {
-    width: calc(100% - 60px);
-    left: 60px !important;
-  }
-  
-  .roadmap-date {
-    width: 80px;
-    left: -100px !important;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-  
-  .roadmap-dot {
-    width: 20px;
-    height: 20px;
-    left: 30px;
   }
 }

@@ -1,0 +1,235 @@
+/* Roadmap Page Styles */
+.roadmap-section {
+  padding: 60px 0;
+  background-color: var(--white);
+  position: relative;
+}
+
+.roadmap-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+
+.roadmap-title {
+  font-size: 36px;
+  color: var(--dark);
+  margin-bottom: 20px;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+.roadmap-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary);
+}
+
+.roadmap-subtitle {
+  font-size: 18px;
+  color: var(--secondary);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.roadmap-timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.roadmap-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary);
+  z-index: 1;
+}
+
+.roadmap-item {
+  position: relative;
+  margin-bottom: 50px;
+  width: 50%;
+  padding: 0 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.roadmap-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.roadmap-item:nth-child(odd) {
+  left: 0;
+  /* Убрано text-align: right для более симметричного вида */
+}
+
+.roadmap-item:nth-child(even) {
+  left: 50%;
+  /* Убрано text-align: left для более симметричного вида */
+}
+
+.roadmap-item:last-child {
+  margin-bottom: 0;
+}
+
+.roadmap-item::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 4px solid var(--white);
+  box-shadow: 0 0 0 2px var(--primary);
+  z-index: 2;
+}
+
+.roadmap-item:nth-child(odd)::before {
+  right: -10px;
+}
+
+.roadmap-item:nth-child(even)::before {
+  left: -10px;
+}
+
+.roadmap-date {
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: var(--primary);
+  padding: 8px 15px;
+  border-radius: 30px;
+  box-shadow: var(--shadow-sm);
+  /* Центрирование даты для всех элементов */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.roadmap-item-content {
+  background-color: var(--light);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: var(--transition);
+  /* Одинаковое выравнивание текста для всех элементов */
+  text-align: left;
+}
+
+.roadmap-item-content:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.roadmap-item-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.roadmap-item-title i {
+  color: var(--primary);
+}
+
+.roadmap-item-text {
+  color: var(--secondary);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.roadmap-item-list {
+  color: var(--secondary);
+  margin-bottom: 15px;
+  line-height: 1.6;
+  list-style-type: none;
+  padding-left: 20px; /* Добавлено для выравнивания маркеров */
+}
+
+.roadmap-item-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.roadmap-item-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+.roadmap-item-list ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.roadmap-item-list ul li:before {
+  background-color: var(--secondary);
+  width: 6px;
+  height: 6px;
+}
+
+.roadmap-item-group {
+  margin-bottom: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .roadmap-timeline::before {
+    left: 20px;
+  }
+  
+  .roadmap-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+    left: 0 !important;
+  }
+  
+  .roadmap-item::before {
+    left: 12px;
+    right: auto;
+  }
+  
+  .roadmap-title {
+    font-size: 28px;
+  }
+  
+  .roadmap-subtitle {
+    font-size: 16px;
+  }
+  
+  .roadmap-item-title {
+    font-size: 20px;
+  }
+  
+  .roadmap-item-content {
+    padding: 20px;
+  }
+}

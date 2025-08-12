@@ -29,126 +29,135 @@
   </header>
 
   <main class="main-content">
-    <section class="project-section">
+    <section class="taxi-section">
       <div class="container">
-        <div class="project-card" style="max-width: 1000px; margin: 0 auto;">
-          <img src="../img/taxi-large.png" alt="Народное Такси" class="project-card-img" style="height: 400px;" loading="lazy">
-          <div class="project-card-body">
-            <h2 class="section-title">Народное Такси</h2>
-            <p class="project-card-text" style="font-size: 18px; line-height: 1.7;">
-              Народное Такси – региональный проект для жителей нашего замечательного региона!
-            </p>
-            
-            <div class="alert" style="margin: 30px 0; padding: 20px; background-color: #fff3cd; border-left: 4px solid var(--primary);">
-              <i class="fas fa-exclamation-circle" style="color: var(--primary); margin-right: 10px;"></i>
-              <strong>Сейчас система работает в тестовом режиме</strong>
-            </div>
-            
-            <div style="margin: 40px 0;">
-              <h3 style="font-size: 24px; margin-bottom: 20px;">Суть проекта</h3>
-              <ul style="list-style-type: none; padding-left: 0;">
-                <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                  <i class="fas fa-check" style="color: var(--primary); margin-right: 10px; margin-top: 3px;"></i>
-                  <span>Любая поездка пассажира стоит всего 150 рублей (символическая плата эквивалентная чашке кофе)</span>
-                </li>
-                <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                  <i class="fas fa-check" style="color: var(--primary); margin-right: 10px; margin-top: 3px;"></i>
-                  <span>Подбираем попутчиков по вашему маршруту = минимум отклонений</span>
-                </li>
-                <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                  <i class="fas fa-check" style="color: var(--primary); margin-right: 10px; margin-top: 3px;"></i>
-                  <span>Дополнительный доход без лишних хлопот</span>
-                </li>
+        <div class="taxi-content">
+          <h1 class="taxi-title">Народное Такси – попутные поездки без посредников</h1>
+          <p class="taxi-subtitle">Зарабатывайте на своих обычных маршрутах и экономьте на поездках!</p>
+          
+          <div class="taxi-alert">
+            <i class="fas fa-exclamation-circle"></i>
+            <strong>Сейчас сервис работает в тестовом режиме – успевайте стать одними из первых пользователей!</strong>
+          </div>
+          
+          <div class="taxi-description">
+            <h2>Что такое Народное Такси?</h2>
+            <p>Народное Такси – это сервис для поиска попутчиков, где водители и пассажиры договариваются напрямую. Без комиссий, без скрытых платежей – только выгодные поездки по вашим привычным маршрутам.</p>
+          </div>
+          
+          <div class="taxi-benefits">
+            <div class="benefit-card">
+              <h3>Для водителей</h3>
+              <ul>
+                <li><i class="fas fa-check"></i> Возьмите попутчиков по пути – система подбирает пассажиров с маршрутами, максимально близкими к вашему</li>
+                <li><i class="fas fa-check"></i> Минимум отклонений – в среднем всего +5-7 минут к вашей обычной поездке</li>
+                <li><i class="fas fa-check"></i> Все деньги ваши – получайте оплату напрямую от пассажиров, без комиссий сервиса</li>
+                <li><i class="fas fa-check"></i> Безопасность – все пользователи проходят проверку при регистрации</li>
               </ul>
             </div>
             
-            <div style="margin: 40px 0;">
-              <h3 style="font-size: 24px; margin-bottom: 20px;">Ваши выгоды</h3>
-              <p style="margin-bottom: 20px;">Бесплатное использование нашего сервиса kladiez.ru</p>
-              <p style="margin-bottom: 20px;">А для активных пользователей у нас есть корпоративная скидка 15% у проверенных партнеров:</p>
-              
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 30px;">
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-bullhorn" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Реклама (Мольберт и Братья)</span>
-                </div>
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-faucet" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Сантехника (Вариус)</span>
-                </div>
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-hammer" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Изделия из камня (ИЛЬТЕДЕМА)</span>
-                </div>
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-fire" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Отопление (Дельта-Те)</span>
-                </div>
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-tooth" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Стоматология (ДентСервис+)</span>
-                </div>
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-home" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Плитка (КЕРАСФЕРА)</span>
-                </div>
-                <div style="background: var(--primary-light); padding: 15px; border-radius: var(--border-radius);">
-                  <i class="fas fa-graduation-cap" style="color: var(--primary); margin-right: 10px;"></i>
-                  <span>Курсы (Специалист)</span>
-                </div>
-              </div>
-              
-              <p style="margin-bottom: 20px;">
-                Подробнее на сайте: <a href="https://www.kladiez.ru/karty.php" target="_blank" style="color: var(--primary);">https://www.kladiez.ru/karty.php</a>
-              </p>
+            <div class="benefit-card">
+              <h3>Для пассажиров</h3>
+              <ul>
+                <li><i class="fas fa-check"></i> Фиксированная цена 150₽ – цена чашки кофе</li>
+                <li><i class="fas fa-check"></i> Поездки по реальным маршрутам – не нужно ждать специальных рейсов</li>
+                <li><i class="fas fa-check"></i> Удобная оплата – наличными или переводом напрямую водителю</li>
+              </ul>
             </div>
-            
-            <div style="margin: 40px 0;">
-              <h3 style="font-size: 24px; margin-bottom: 20px;">Как начать?</h3>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 20px;">
-                <div style="text-align: center;">
-                  <div style="width: 60px; height: 60px; background-color: var(--primary); color: var(--dark); font-weight: bold; font-size: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">1</div>
-                  <p>Регистрируйтесь в сервисе</p>
-                </div>
-                <div style="text-align: center;">
-                  <div style="width: 60px; height: 60px; background-color: var(--primary); color: var(--dark); font-weight: bold; font-size: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">2</div>
-                  <p>Принимайте заказы по пути следования</p>
-                </div>
-                <div style="text-align: center;">
-                  <div style="width: 60px; height: 60px; background-color: var(--primary); color: var(--dark); font-weight: bold; font-size: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">3</div>
-                  <p>Зарабатывайте и экономьте на услугах партнеров</p>
-                </div>
+          </div>
+          
+          <div class="taxi-steps">
+            <h2>5 простых шагов к первой поездке</h2>
+            <div class="steps-grid">
+              <div class="step">
+                <div class="step-number">1</div>
+                <p>Зарегистрируйтесь – заполните профиль за 2 минуты</p>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <p>Укажите маршрут вашего движения</p>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <p>Найдите попутчиков – система покажет подходящие варианты</p>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <p>Договоритесь об удобном времени – через встроенный чат</p>
+              </div>
+              <div class="step">
+                <div class="step-number">5</div>
+                <p>Совершите поездку – и получите оплату напрямую</p>
               </div>
             </div>
-            
-            <div style="background: var(--primary-light); padding: 30px; border-radius: var(--border-radius); margin-top: 40px; text-align: center;">
-              <h3 style="font-size: 24px; margin-bottom: 20px;">Просто. Выгодно. По-соседски!</h3>
-              <p style="margin-bottom: 20px; font-size: 18px;">
-                Присоединяйтесь к нашему сервису и получайте стабильный доход с комфортными условиями работы.
-              </p>
-              <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <a href="https://t.me/peopleTaxi_bot" target="_blank" class="btn btn-primary" style="font-size: 16px;">
-                  <i class="fas fa-car-alt"></i> Стать водителем
-                </a>
-                <a href="../index.html" class="btn btn-outline" style="font-size: 16px;">
-                  <i class="fas fa-arrow-left"></i> Вернуться на главную
-                </a>
+          </div>
+          
+          <div class="taxi-advantages">
+            <h2>Почему это выгодно?</h2>
+            <div class="advantages-grid">
+              <div class="advantage">
+                <h3>Для водителей</h3>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> Окупайте бензин на привычных маршрутах</li>
+                  <li><i class="fas fa-check-circle"></i> Средний дополнительный доход: 1 500–3 000₽ в неделю</li>
+                  <li><i class="fas fa-check-circle"></i> Никаких комиссий – 100% оплаты остаётся у вас</li>
+                </ul>
+              </div>
+              <div class="advantage">
+                <h3>Для пассажиров</h3>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> Экономия до 70% по сравнению с такси</li>
+                  <li><i class="fas fa-check-circle"></i> Гибкий график – поездки в удобное время</li>
+                  <li><i class="fas fa-check-circle"></i> Комфорт – поездки на обычных автомобилях</li>
+                </ul>
               </div>
             </div>
+          </div>
+          
+          <div class="taxi-faq">
+            <h2>Частые вопросы</h2>
+            <div class="faq-item">
+              <p class="faq-question"><i class="fas fa-question-circle"></i> Как происходит оплата?</p>
+              <p class="faq-answer"><i class="fas fa-arrow-right"></i> Наличными или переводом напрямую водителю. Мы не участвуем в расчетах.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-question"><i class="fas fa-question-circle"></i> Как обеспечивается безопасность?</p>
+              <p class="faq-answer"><i class="fas fa-arrow-right"></i> Все водители проходят верификацию по документам, сохраняется история поездок.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-question"><i class="fas fa-question-circle"></i> Сколько стоит регистрация?</p>
+              <p class="faq-answer"><i class="fas fa-arrow-right"></i> Регистрация и использование сервиса абсолютно бесплатны для всех пользователей.</p>
+            </div>
+          </div>
+          
+          <div class="taxi-cta">
+            <h3>Присоединяйтесь уже сегодня!</h3>
+            <p>Народное Такси – ваши поездки стали выгоднее! 🚗</p>
+            <div class="cta-buttons">
+              <a href="https://t.me/peopleTaxi_bot" target="_blank" class="btn btn-primary">
+                <i class="fas fa-car-alt"></i> Стать водителем
+              </a>
+              <a href="https://t.me/peopleTaxi_bot" target="_blank" class="btn btn-primary">
+                <i class="fas fa-user"></i> Стать пассажиром
+              </a>
+            </div>
+            <p class="cta-contacts"><i class="fas fa-phone-alt"></i> Есть вопросы? Пишите в нашу поддержку!</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-<section class="survey-section">
-  <div class="survey-container">
-    <h2 class="survey-title">Оцените наш редизайн</h2>
-    <p class="survey-text">Все ли вам понятно и хотели бы вы видеть такой формат сайта? Ответьте на короткий опрос и помогите нам стать лучше!</p>
-    <a href="https://forms.gle/ENW6wvENBBdaKSiB7" target="_blank" class="btn survey-btn">
-      <i class="fas fa-poll"></i> Перейти к опросу
-    </a>
-  </div>
-</section>
+
+  <section class="survey-section">
+    <div class="survey-container">
+      <h2 class="survey-title">Оцените наш сервис</h2>
+      <p class="survey-text">Все ли вам понятно и удобно ли пользоваться сервисом? Ответьте на короткий опрос и помогите нам стать лучше!</p>
+      <a href="https://forms.gle/ENW6wvENBBdaKSiB7" target="_blank" class="btn survey-btn">
+        <i class="fas fa-poll"></i> Перейти к опросу
+      </a>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
